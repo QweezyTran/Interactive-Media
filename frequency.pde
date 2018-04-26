@@ -27,8 +27,8 @@ void draw() {
   {
     
     //here is is where you will plug in values
-    fill(93+in.right.get(i)*300,9+in.right.get(i)*300,92,63);
-    stroke(360+in.right.get(i)*300,75+in.right.get(i)*1000,92,63);
+    fill(93+in.right.get(i)*3000,9+in.right.get(i)*1000,92,63);
+    stroke(360+in.right.get(i)*3000,75+in.right.get(i)*1000,92);
     //
     ellipse( 960, 600, 50 + 50+in.left.get(i)*1000, 50);
     ellipse( 960, 600, 50+in.right.get(i)*1000, 50+in.right.get(i+1)*1000 );
@@ -37,5 +37,4 @@ void draw() {
   }
   
   String monitoringState = in.isMonitoring() ? "enabled" : "disabled";
-  text( "Input monitoring is currently " + monitoringState + ".", 5, 15 );
 }
